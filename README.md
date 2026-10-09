@@ -8,7 +8,7 @@
 
 **Foundation 0.1.0: complete and configured PAUSED.** The production research runtime, Site/backend connection, CRM and email integrations remain pending. The operating workflows below are planned capabilities; no live customer or revenue performance is claimed.
 
-[Product announcement](docs/PRODUCT_LAUNCH.md) · [Read the full case study](docs/CASE_STUDY.md) · [Download the designed PDF](docs/ARC_Public_Case_Study.pdf) · [Explore 63 research criteria](docs/RESEARCH_PARAMETERS.md)
+[Product announcement](docs/PRODUCT_LAUNCH.md) · [Read the full case study](docs/CASE_STUDY.md) · [Explore 63 research criteria](docs/RESEARCH_PARAMETERS.md)
 
 ## Product thesis
 
@@ -52,12 +52,11 @@ The assistant and command center are designed to share authenticated tools and d
 
 | Document | What you will find |
 | --- | --- |
-| [Product launch](docs/PRODUCT_LAUNCH.md) | Product introduction and [six-page launch PDF](docs/ARC_Product_Launch.pdf). |
+| [Product launch](docs/PRODUCT_LAUNCH.md) | Product introduction, scope and availability. |
 | [Full case study](docs/CASE_STUDY.md) | Product strategy, end-to-end system, illustrative walkthrough, economics and limitations. |
 | [Research criteria](docs/RESEARCH_PARAMETERS.md) | 63 intended criteria grouped into six research families. |
 | [Architecture and diagrams](docs/ARCHITECTURE.md) | System/data flow, approval lifecycle, evidence contracts and trust boundaries. |
 | [Status and roadmap](docs/STATUS_AND_ROADMAP.md) | Complete versus planned features, pilot limits and measurement definitions. |
-| [Designed PDF](docs/ARC_Public_Case_Study.pdf) | Shareable visual overview with flowcharts and the complete research catalog. |
 
 ## Pilot design
 

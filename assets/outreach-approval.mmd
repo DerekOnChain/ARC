@@ -1,0 +1,19 @@
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> NeedsApproval: Owner selects draft
+    NeedsApproval --> Approved: Exact recipient and content approved
+    NeedsApproval --> Draft: Edit requested
+    Approved --> NeedsApproval: Recipient or content changes
+    Approved --> Held: Pause or suppression blocks action
+    Approved --> Sending: Sending enabled and final checks pass
+    Sending --> Sent: Provider confirms success
+    Sending --> Failed: Confirmed failure
+    Failed --> NeedsApproval: Owner reviews retry
+    Sent --> Replied: Response recorded
+    Sent --> Suppressed: Opt-out or stop event
+    Held --> NeedsApproval: Owner reconsiders
+    note right of Draft
+        Planned workflow.
+        Live sending and follow-ups
+        are disabled in the foundation.
+    end note

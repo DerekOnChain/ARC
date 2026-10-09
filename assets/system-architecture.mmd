@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Interfaces["Public and private interfaces"]
+        A["Public agency Site"]
+        B["Private command center"]
+        C["Private ARC assistant"]
+    end
+    A -->|Review request| D["Authenticated API boundary"]
+    B -->|Owner and employee access| D
+    C -->|Authorized tools| D
+    D --> E["Durable CRM and settings"]
+    D --> F["Budgeted job queue"]
+    F --> G["Discovery and research workers"]
+    G --> H["Evidence and report storage"]
+    G --> E
+    E --> I["Scoring and report services"]
+    H --> I
+    I --> D
+    D --> J{"Owner approval and send gates"}
+    J --> K["Email provider"]
+    K -->|Status and response events| E
+    L["Pause, cost ledger and audit log"] -.-> D
+    L -.-> F
+    L -.-> J
+    classDef interface fill:#e0f7fa,stroke:#00838f,color:#073344;
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#29184b;
+    classDef control fill:#fff2d7,stroke:#b77900,color:#4c3300;
+    class A,B,C interface;
+    class D,E,F,G,H,I,K core;
+    class J,L control;

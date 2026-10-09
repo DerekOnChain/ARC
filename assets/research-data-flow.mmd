@@ -1,0 +1,29 @@
+flowchart TD
+    A["Authorized sources"] --> B["Normalize and deduplicate"]
+    B --> C{"Eligible business?"}
+    C -->|No| X["Exclude with reason"]
+    C -->|Yes| D["Bounded website screening"]
+    D --> E["Website and business evidence"]
+    E --> F["Score with confidence"]
+    F --> G{"Review threshold met?"}
+    G -->|No| W["Watch or reject"]
+    G -->|Yes| H["Owner selects lead"]
+    H --> I["Private report and email draft"]
+    I --> J{"Exact message approved?"}
+    J -->|No| K["Revise or hold"]
+    K --> I
+    J -->|Yes| L["Final suppression and pause checks"]
+    L --> M["Send when separately enabled"]
+    M --> N["CRM outcomes and review"]
+    N -.-> F
+    P["Pause and budget gates"] -.-> D
+    P -.-> E
+    P -.-> M
+    classDef source fill:#e0f7fa,stroke:#00838f,color:#073344;
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#29184b;
+    classDef control fill:#fff2d7,stroke:#b77900,color:#4c3300;
+    classDef result fill:#dcfce7,stroke:#16804a,color:#073a23;
+    class A,B source;
+    class D,E,F,H,I core;
+    class C,G,J,L,P control;
+    class M,N result;
