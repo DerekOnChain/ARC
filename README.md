@@ -67,3 +67,11 @@ At most **100 raw candidates/day**, a target of **five qualified leads**, and a 
 The private foundation is complete. Research, schedules, live sending and follow-ups are disabled, with no autonomous runtime provisioned by that release. Site creation and backend connection are the next implementation stages; activation requires a separate owner instruction.
 
 This public repository is a project showcase. It contains sanitized product documentation and diagrams, rather than proprietary runtime source, private prompts, credentials, internal conversations or prospect data. Product claims are scoped to the reviewed foundation record and supplied design specifications as of October 9, 2026.
+
+
+## Download the public launch package
+
+- [Case study PDF - strategy, diagrams and 63 research criteria](downloads/ARC_Public_Case_Study.pdf)
+- [Product launch PDF - introduction and research data flow](downloads/ARC_Product_Launch.pdf)
+
+Both editions document the foundation and planned capabilities; ARC remains configured PAUSED.
